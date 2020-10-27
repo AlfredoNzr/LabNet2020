@@ -1,0 +1,5 @@
+C:\Users\Molheh\source\repos\LabNet2020\ejercicio2\ExceptionPractice\ExceptionPractice.CrossCutting.Exceptions\bin\Debug\ExceptionPractice.CrossCutting.Exceptions.dll
+C:\Users\Molheh\source\repos\LabNet2020\ejercicio2\ExceptionPractice\ExceptionPractice.CrossCutting.Exceptions\bin\Debug\ExceptionPractice.CrossCutting.Exceptions.pdb
+C:\Users\Molheh\source\repos\LabNet2020\ejercicio2\ExceptionPractice\ExceptionPractice.CrossCutting.Exceptions\obj\Debug\ExceptionPractice.CrossCutting.Exceptions.csproj.CoreCompileInputs.cache
+C:\Users\Molheh\source\repos\LabNet2020\ejercicio2\ExceptionPractice\ExceptionPractice.CrossCutting.Exceptions\obj\Debug\ExceptionPractice.CrossCutting.Exceptions.dll
+C:\Users\Molheh\source\repos\LabNet2020\ejercicio2\ExceptionPractice\ExceptionPractice.CrossCutting.Exceptions\obj\Debug\ExceptionPractice.CrossCutting.Exceptions.pdb

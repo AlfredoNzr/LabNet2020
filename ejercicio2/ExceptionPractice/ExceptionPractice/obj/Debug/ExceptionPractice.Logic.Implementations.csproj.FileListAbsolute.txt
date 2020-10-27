@@ -1,0 +1,13 @@
+C:\Users\Molheh\source\repos\LabNet2020\ejercicio2\ExceptionPractice\ExceptionPractice\bin\Debug\ExceptionPractice.Logic.Implementations.dll
+C:\Users\Molheh\source\repos\LabNet2020\ejercicio2\ExceptionPractice\ExceptionPractice\bin\Debug\ExceptionPractice.Logic.Implementations.pdb
+C:\Users\Molheh\source\repos\LabNet2020\ejercicio2\ExceptionPractice\ExceptionPractice\bin\Debug\ExceptionPractice.CrossCutting.Exceptions.dll
+C:\Users\Molheh\source\repos\LabNet2020\ejercicio2\ExceptionPractice\ExceptionPractice\bin\Debug\ExceptionPractice.Logic.Abstractions.dll
+C:\Users\Molheh\source\repos\LabNet2020\ejercicio2\ExceptionPractice\ExceptionPractice\bin\Debug\ExtensionMethods.dll
+C:\Users\Molheh\source\repos\LabNet2020\ejercicio2\ExceptionPractice\ExceptionPractice\bin\Debug\ExceptionPractice.CrossCutting.Exceptions.pdb
+C:\Users\Molheh\source\repos\LabNet2020\ejercicio2\ExceptionPractice\ExceptionPractice\bin\Debug\ExceptionPractice.Logic.Abstractions.pdb
+C:\Users\Molheh\source\repos\LabNet2020\ejercicio2\ExceptionPractice\ExceptionPractice\bin\Debug\ExtensionMethods.pdb
+C:\Users\Molheh\source\repos\LabNet2020\ejercicio2\ExceptionPractice\ExceptionPractice\obj\Debug\ExceptionPractice.Logic.Implementations.csprojAssemblyReference.cache
+C:\Users\Molheh\source\repos\LabNet2020\ejercicio2\ExceptionPractice\ExceptionPractice\obj\Debug\ExceptionPractice.Logic.Implementations.csproj.CoreCompileInputs.cache
+C:\Users\Molheh\source\repos\LabNet2020\ejercicio2\ExceptionPractice\ExceptionPractice\obj\Debug\ExceptionPractice.Logic.Implementations.csproj.CopyComplete
+C:\Users\Molheh\source\repos\LabNet2020\ejercicio2\ExceptionPractice\ExceptionPractice\obj\Debug\ExceptionPractice.Logic.Implementations.dll
+C:\Users\Molheh\source\repos\LabNet2020\ejercicio2\ExceptionPractice\ExceptionPractice\obj\Debug\ExceptionPractice.Logic.Implementations.pdb

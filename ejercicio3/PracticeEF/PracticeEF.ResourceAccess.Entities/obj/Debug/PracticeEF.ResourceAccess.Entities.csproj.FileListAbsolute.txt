@@ -1,0 +1,11 @@
+C:\Users\Molheh\source\repos\LabNet2020\ejercicio3\PracticeEF\PracticeEF.ResourceAccess.Entities\bin\Debug\PracticeEF.ResourceAccess.Entities.dll
+C:\Users\Molheh\source\repos\LabNet2020\ejercicio3\PracticeEF\PracticeEF.ResourceAccess.Entities\bin\Debug\PracticeEF.ResourceAccess.Entities.pdb
+C:\Users\Molheh\source\repos\LabNet2020\ejercicio3\PracticeEF\PracticeEF.ResourceAccess.Entities\bin\Debug\EntityFramework.dll
+C:\Users\Molheh\source\repos\LabNet2020\ejercicio3\PracticeEF\PracticeEF.ResourceAccess.Entities\bin\Debug\EntityFramework.xml
+C:\Users\Molheh\source\repos\LabNet2020\ejercicio3\PracticeEF\PracticeEF.ResourceAccess.Entities\obj\Debug\PracticeEF.ResourceAccess.Entities.csproj.CoreCompileInputs.cache
+C:\Users\Molheh\source\repos\LabNet2020\ejercicio3\PracticeEF\PracticeEF.ResourceAccess.Entities\obj\Debug\PracticeEF.ResourceAccess.Entities.csproj.CopyComplete
+C:\Users\Molheh\source\repos\LabNet2020\ejercicio3\PracticeEF\PracticeEF.ResourceAccess.Entities\obj\Debug\PracticeEF.ResourceAccess.Entities.dll
+C:\Users\Molheh\source\repos\LabNet2020\ejercicio3\PracticeEF\PracticeEF.ResourceAccess.Entities\obj\Debug\PracticeEF.ResourceAccess.Entities.pdb
+C:\Users\Molheh\source\repos\LabNet2020\ejercicio3\PracticeEF\PracticeEF.ResourceAccess.Entities\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Molheh\source\repos\LabNet2020\ejercicio3\PracticeEF\PracticeEF.ResourceAccess.Entities\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Molheh\source\repos\LabNet2020\ejercicio3\PracticeEF\PracticeEF.ResourceAccess.Entities\obj\Debug\PracticeEF.ResourceAccess.Entities.csprojAssemblyReference.cache

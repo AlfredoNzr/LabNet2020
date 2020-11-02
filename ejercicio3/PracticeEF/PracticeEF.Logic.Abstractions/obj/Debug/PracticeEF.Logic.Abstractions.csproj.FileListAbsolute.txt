@@ -1,0 +1,9 @@
+C:\Users\Molheh\source\repos\LabNet2020\ejercicio3\PracticeEF\PracticeEF.Logic.Abstractions\bin\Debug\PracticeEF.Logic.Abstractions.dll
+C:\Users\Molheh\source\repos\LabNet2020\ejercicio3\PracticeEF\PracticeEF.Logic.Abstractions\bin\Debug\PracticeEF.Logic.Abstractions.pdb
+C:\Users\Molheh\source\repos\LabNet2020\ejercicio3\PracticeEF\PracticeEF.Logic.Abstractions\bin\Debug\PracticeEF.ResourceAccess.Entities.dll
+C:\Users\Molheh\source\repos\LabNet2020\ejercicio3\PracticeEF\PracticeEF.Logic.Abstractions\bin\Debug\PracticeEF.ResourceAccess.Entities.pdb
+C:\Users\Molheh\source\repos\LabNet2020\ejercicio3\PracticeEF\PracticeEF.Logic.Abstractions\obj\Debug\PracticeEF.Logic.Abstractions.csprojAssemblyReference.cache
+C:\Users\Molheh\source\repos\LabNet2020\ejercicio3\PracticeEF\PracticeEF.Logic.Abstractions\obj\Debug\PracticeEF.Logic.Abstractions.csproj.CoreCompileInputs.cache
+C:\Users\Molheh\source\repos\LabNet2020\ejercicio3\PracticeEF\PracticeEF.Logic.Abstractions\obj\Debug\PracticeEF.Logic.Abstractions.csproj.CopyComplete
+C:\Users\Molheh\source\repos\LabNet2020\ejercicio3\PracticeEF\PracticeEF.Logic.Abstractions\obj\Debug\PracticeEF.Logic.Abstractions.dll
+C:\Users\Molheh\source\repos\LabNet2020\ejercicio3\PracticeEF\PracticeEF.Logic.Abstractions\obj\Debug\PracticeEF.Logic.Abstractions.pdb

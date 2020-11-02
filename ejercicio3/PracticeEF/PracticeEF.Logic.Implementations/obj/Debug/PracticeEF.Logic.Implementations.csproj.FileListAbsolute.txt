@@ -1,0 +1,17 @@
+C:\Users\Molheh\source\repos\LabNet2020\ejercicio3\PracticeEF\PracticeEF.Logic.Implementations\bin\Debug\PracticeEF.Logic.Implementations.dll
+C:\Users\Molheh\source\repos\LabNet2020\ejercicio3\PracticeEF\PracticeEF.Logic.Implementations\bin\Debug\PracticeEF.Logic.Implementations.pdb
+C:\Users\Molheh\source\repos\LabNet2020\ejercicio3\PracticeEF\PracticeEF.Logic.Implementations\bin\Debug\EntityFramework.dll
+C:\Users\Molheh\source\repos\LabNet2020\ejercicio3\PracticeEF\PracticeEF.Logic.Implementations\bin\Debug\PracticeEF.ResourceAccess.DataBase.dll
+C:\Users\Molheh\source\repos\LabNet2020\ejercicio3\PracticeEF\PracticeEF.Logic.Implementations\bin\Debug\PracticeEF.ResourceAccess.Entities.dll
+C:\Users\Molheh\source\repos\LabNet2020\ejercicio3\PracticeEF\PracticeEF.Logic.Implementations\bin\Debug\PracticeEF.ResourceAccess.DataBase.pdb
+C:\Users\Molheh\source\repos\LabNet2020\ejercicio3\PracticeEF\PracticeEF.Logic.Implementations\bin\Debug\PracticeEF.ResourceAccess.DataBase.dll.config
+C:\Users\Molheh\source\repos\LabNet2020\ejercicio3\PracticeEF\PracticeEF.Logic.Implementations\bin\Debug\PracticeEF.ResourceAccess.Entities.pdb
+C:\Users\Molheh\source\repos\LabNet2020\ejercicio3\PracticeEF\PracticeEF.Logic.Implementations\bin\Debug\EntityFramework.xml
+C:\Users\Molheh\source\repos\LabNet2020\ejercicio3\PracticeEF\PracticeEF.Logic.Implementations\obj\Debug\PracticeEF.Logic.Implementations.csprojAssemblyReference.cache
+C:\Users\Molheh\source\repos\LabNet2020\ejercicio3\PracticeEF\PracticeEF.Logic.Implementations\obj\Debug\PracticeEF.Logic.Implementations.csproj.CoreCompileInputs.cache
+C:\Users\Molheh\source\repos\LabNet2020\ejercicio3\PracticeEF\PracticeEF.Logic.Implementations\obj\Debug\PracticeEF.Logic.Implementations.csproj.CopyComplete
+C:\Users\Molheh\source\repos\LabNet2020\ejercicio3\PracticeEF\PracticeEF.Logic.Implementations\obj\Debug\PracticeEF.Logic.Implementations.dll
+C:\Users\Molheh\source\repos\LabNet2020\ejercicio3\PracticeEF\PracticeEF.Logic.Implementations\obj\Debug\PracticeEF.Logic.Implementations.pdb
+C:\Users\Molheh\source\repos\LabNet2020\ejercicio3\PracticeEF\PracticeEF.Logic.Implementations\bin\Debug\PracticeEF.Logic.Implementations.dll.config
+C:\Users\Molheh\source\repos\LabNet2020\ejercicio3\PracticeEF\PracticeEF.Logic.Implementations\bin\Debug\PracticeEF.Logic.Abstractions.dll
+C:\Users\Molheh\source\repos\LabNet2020\ejercicio3\PracticeEF\PracticeEF.Logic.Implementations\bin\Debug\PracticeEF.Logic.Abstractions.pdb

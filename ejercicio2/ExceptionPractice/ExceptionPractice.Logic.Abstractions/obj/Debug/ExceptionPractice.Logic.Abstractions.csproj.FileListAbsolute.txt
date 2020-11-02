@@ -1,9 +1,0 @@
-C:\Users\Molheh\source\repos\LabNet2020\ejercicio2\ExceptionPractice\ExceptionPractice.Logic.Abstractions\bin\Debug\ExceptionPractice.Logic.Abstractions.dll
-C:\Users\Molheh\source\repos\LabNet2020\ejercicio2\ExceptionPractice\ExceptionPractice.Logic.Abstractions\bin\Debug\ExceptionPractice.Logic.Abstractions.pdb
-C:\Users\Molheh\source\repos\LabNet2020\ejercicio2\ExceptionPractice\ExceptionPractice.Logic.Abstractions\bin\Debug\ExceptionPractice.CrossCutting.Exceptions.dll
-C:\Users\Molheh\source\repos\LabNet2020\ejercicio2\ExceptionPractice\ExceptionPractice.Logic.Abstractions\bin\Debug\ExceptionPractice.CrossCutting.Exceptions.pdb
-C:\Users\Molheh\source\repos\LabNet2020\ejercicio2\ExceptionPractice\ExceptionPractice.Logic.Abstractions\obj\Debug\ExceptionPractice.Logic.Abstractions.csprojAssemblyReference.cache
-C:\Users\Molheh\source\repos\LabNet2020\ejercicio2\ExceptionPractice\ExceptionPractice.Logic.Abstractions\obj\Debug\ExceptionPractice.Logic.Abstractions.csproj.CoreCompileInputs.cache
-C:\Users\Molheh\source\repos\LabNet2020\ejercicio2\ExceptionPractice\ExceptionPractice.Logic.Abstractions\obj\Debug\ExceptionPractice.Logic.Abstractions.csproj.CopyComplete
-C:\Users\Molheh\source\repos\LabNet2020\ejercicio2\ExceptionPractice\ExceptionPractice.Logic.Abstractions\obj\Debug\ExceptionPractice.Logic.Abstractions.dll
-C:\Users\Molheh\source\repos\LabNet2020\ejercicio2\ExceptionPractice\ExceptionPractice.Logic.Abstractions\obj\Debug\ExceptionPractice.Logic.Abstractions.pdb

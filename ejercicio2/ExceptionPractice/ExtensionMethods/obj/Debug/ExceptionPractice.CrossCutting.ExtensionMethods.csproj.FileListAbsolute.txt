@@ -1,5 +1,0 @@
-C:\Users\Molheh\source\repos\LabNet2020\ejercicio2\ExceptionPractice\ExtensionMethods\bin\Debug\ExtensionMethods.dll
-C:\Users\Molheh\source\repos\LabNet2020\ejercicio2\ExceptionPractice\ExtensionMethods\bin\Debug\ExtensionMethods.pdb
-C:\Users\Molheh\source\repos\LabNet2020\ejercicio2\ExceptionPractice\ExtensionMethods\obj\Debug\ExceptionPractice.CrossCutting.ExtensionMethods.csproj.CoreCompileInputs.cache
-C:\Users\Molheh\source\repos\LabNet2020\ejercicio2\ExceptionPractice\ExtensionMethods\obj\Debug\ExtensionMethods.dll
-C:\Users\Molheh\source\repos\LabNet2020\ejercicio2\ExceptionPractice\ExtensionMethods\obj\Debug\ExtensionMethods.pdb

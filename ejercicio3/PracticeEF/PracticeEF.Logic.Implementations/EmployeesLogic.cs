@@ -9,52 +9,46 @@ using System.Threading.Tasks;
 
 namespace PracticeEF.Logic.Implementations
 {
-    public class EmployeesLogic : IEmployeesLogic
+    public class EmployeesLogic : BaseLogic, ILogic<Employees>
     {
-        private readonly NorthwindContext context;
-
-        public EmployeesLogic()
-        {
-            this.context = new NorthwindContext();
-        }
-
-        public List<Employees> GetEmployees()
+        
+        public List<Employees> GetAll()
         {
             try
             {
                 return context.Employees.ToList();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw;
+                throw ex;
             }
         }
 
-        public Employees GetEmployees(int id)
+        public Employees GetOne(int id)
         {
             try
             {
                 return context.Employees.FirstOrDefault(r => r.EmployeeID.Equals(id));
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw;
+                throw ex;
             }
         }
-        public void AddEmployees(Employees employees)
+        public void Insert(Employees employees)
         {
             try
             {
                 context.Employees.Add(employees);
                 context.SaveChanges();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw;
+                throw ex;
             }
         }
 
-        public void UpdateEmployees(Employees employees)
+        public void Modify(Employees employees)
         {
             try
             {
@@ -63,20 +57,20 @@ namespace PracticeEF.Logic.Implementations
             }
             catch (Exception ex)
             {
-                throw;
+                throw ex;
             }
         }
 
-        public void DeleteEmployees(Employees employees)
+        public void Delete(Employees employees)
         {
             try
             {
                 context.Employees.Remove(employees);
                 context.SaveChanges();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw;
+                throw ex;
             }
         }
     }

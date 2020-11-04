@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticeEF.Logic.Implementa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticeEF.Logic.Abstractions", "PracticeEF.Logic.Abstractions\PracticeEF.Logic.Abstractions.csproj", "{97AF5A48-37BE-450C-AB81-54304B63EAC3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticeEF.Interfaces.WebUI", "PracticeEF.Interfaces.WebUI\PracticeEF.Interfaces.WebUI.csproj", "{F040FAE7-CA6C-4726-A511-2E74913D61C2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{97AF5A48-37BE-450C-AB81-54304B63EAC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{97AF5A48-37BE-450C-AB81-54304B63EAC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{97AF5A48-37BE-450C-AB81-54304B63EAC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F040FAE7-CA6C-4726-A511-2E74913D61C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F040FAE7-CA6C-4726-A511-2E74913D61C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F040FAE7-CA6C-4726-A511-2E74913D61C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F040FAE7-CA6C-4726-A511-2E74913D61C2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,6 +61,7 @@ Global
 		{A2A7B8D7-3CDA-4CFA-A429-DA3D08E4C164} = {2E5FBD48-C1D3-4860-89E7-6ACD71DF450E}
 		{0843381F-8495-4A71-A4EC-9293F921AD5C} = {63D32F09-D27E-4092-899A-A964178F3F53}
 		{97AF5A48-37BE-450C-AB81-54304B63EAC3} = {63D32F09-D27E-4092-899A-A964178F3F53}
+		{F040FAE7-CA6C-4726-A511-2E74913D61C2} = {EEADA935-D53E-4DB0-B0B3-0676375ACCEC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {818F8E0E-9910-4076-B695-45468D38FE75}

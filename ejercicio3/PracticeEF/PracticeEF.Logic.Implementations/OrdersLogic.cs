@@ -9,75 +9,69 @@ using System.Threading.Tasks;
 
 namespace PracticeEF.Logic.Implementations
 {
-    public class OrdersLogic : IOrdersLogic
+    public class OrdersLogic : BaseLogic, ILogic<Orders>
     {
-        private readonly NorthwindContext context;
-
-        public OrdersLogic()
-        {
-            this.context = new NorthwindContext();
-        }
-
-        public List<Orders> GetOrders()
+        
+        public List<Orders> GetAll()
         {
             try
             {
                 return context.Orders.ToList();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw;
+                throw ex;
             }
         }
 
-        public Orders GetOrders(int id)
+        public Orders GetOne(int id)
         {
             try
             {
                 return context.Orders.FirstOrDefault(r => r.OrderID.Equals(id));
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw;
+                throw ex;
             }
         }
 
-        public void AddOrders(Orders orders)
+        public void Insert(Orders orders)
         {
             try
             {
                 context.Orders.Add(orders);
                 context.SaveChanges();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw;
+                throw ex;
             }
         }
 
-        public void UpdateOrders(Orders orders)
+        public void Modify(Orders orders)
         {
             try
             {
                 context.Entry(orders).State = System.Data.Entity.EntityState.Modified;
                 context.SaveChanges();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw;
+                throw ex;
             }
         }
 
-        public void DeleteOrders(Orders orders)
+        public void Delete(Orders orders)
         {
             try
             {
                 context.Orders.Remove(orders);
                 context.SaveChanges();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw;
+                throw ex;
             }
         }
     }

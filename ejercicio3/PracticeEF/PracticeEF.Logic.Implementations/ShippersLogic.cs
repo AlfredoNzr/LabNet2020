@@ -7,75 +7,74 @@ using System.Linq;
 
 namespace PracticeEF.Logic.Implementations
 {
-    public class ShippersLogic : IShippersLogic
+    public class ShippersLogic : BaseLogic, ILogic<Shippers>
     {
-        private readonly NorthwindContext context;
 
-        public ShippersLogic()
-        {
-            this.context = new NorthwindContext();
-        }
-
-        public List<Shippers> GetShippers()
+        public List<Shippers> GetAll()
         {
             try
             {
                 return context.Shippers.ToList();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw;
+                throw ex;
             }
         }
 
-        public Shippers GetShippers(int id)
+        public Shippers GetOne(int id)
         {
             try
             {
                 return context.Shippers.FirstOrDefault(r => r.ShipperID.Equals(id));
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw;
+                throw ex;
             }
         }
-        public void AddShippers(Shippers shippers)
+        public void Modify(Shippers shippers)
         {
             try
             {
                 context.Shippers.Add(shippers);
                 context.SaveChanges();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw;
+                throw ex;
             }
         }
 
-        public void UpdateShippers(Shippers shippers)
+        public void Update(Shippers shippers)
         {
             try
             {
                 context.Entry(shippers).State = System.Data.Entity.EntityState.Modified;
                 context.SaveChanges();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw;
+                throw ex;
             }
         }
 
-        public void DeleteShippers(Shippers shippers)
+        public void Delete(Shippers shippers)
         {
             try
             {
                 context.Shippers.Remove(shippers);
                 context.SaveChanges();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw;
+                throw ex;
             }
+        }
+
+        public void Insert(Shippers entity)
+        {
+            throw new NotImplementedException();
         }
     }
 }

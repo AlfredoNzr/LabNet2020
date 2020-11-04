@@ -9,44 +9,38 @@ using System.Linq;
 
 namespace PracticeEF.Logic.Implementations
 {
-    public class CategoriesLogic : ICategoriesLogic
+    public class CategoriesLogic : BaseLogic, ILogic<Categories>
     {
-        private readonly NorthwindContext context;
 
-        public CategoriesLogic()
-        {
-            this.context = new NorthwindContext();
-        }
-
-        public List<Categories> GetCategories()
+        public List<Categories> GetAll()
         {
             try
             {
                 return context.Categories.ToList();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw;
+                throw ex;
             }
         }
 
-        public Categories GetCategories(int id)
+        public Categories GetOne(int id)
         {
             try
             {
                 return (from c in context.Categories
                           where c.CategoryID == id
-                          select c).SingleOrDefault();
+                          select c).FirstOrDefault();
                  //probando distintas formas          
                 //return context.Categories.FirstOrDefault(r => r.CategoryID.Equals(id));
             }
             catch (Exception ex)
             {
-                throw;
+                throw ex;
             }
         }
 
-        public void AddCategories(Categories categories)
+        public void Insert(Categories categories)
         {
             try
             {
@@ -59,12 +53,8 @@ namespace PracticeEF.Logic.Implementations
             }
         }
         
-        public void UpdateCategories(Categories pCategories)
+        public void Modify(Categories pCategories)
         {
-            //Categories categories = context.Categories.First(r => r.CategoryID.Equals(pCategories.CategoryID));
-            //categories.CategoryID = pCategories.CategoryID;
-            //.....
-            //..... MAS DENSO
             try
             {
                 context.Entry(pCategories).State = System.Data.Entity.EntityState.Modified;
@@ -72,20 +62,33 @@ namespace PracticeEF.Logic.Implementations
             }
             catch(Exception ex)
             {
-                throw;
+                throw ex;
             }
         }
 
-        public void DeleteCategories(Categories categories)
+        public void Delete(Categories categories)
         {
             try
             {
                 context.Categories.Remove(categories);
                 context.SaveChanges();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw;
+                throw ex;
+            }
+        }
+
+        public void Delete(int id)
+        {
+            try
+            {
+                context.Categories.Remove(this.GetOne(id));
+                context.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
             }
         }
     }

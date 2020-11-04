@@ -7,53 +7,52 @@ using System.Linq;
 
 namespace PracticeEF.Logic.Implementations
 {
-    public class CustomersLogic : ICustomersLogic
+    public class CustomersLogic : BaseLogic, ILogic<Customers>
     {
-        private readonly NorthwindContext context;
 
-        public CustomersLogic()
-        {
-            this.context = new NorthwindContext();
-        }
-
-        public List<Customers> GetCustomers()
+        public List<Customers> GetAll()
         {
             try
             {
                 return context.Customers.ToList();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw;
+                throw ex;
             }
         }
 
-        public Customers GetCustomers(int id)
+        public Customers GetOne(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Customers GetOne(string id)
         {
             try
             {
                 return context.Customers.FirstOrDefault(r => r.CustomerID.Equals(id));
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw;
+                throw ex;
             }
         }
 
-        public void AddCustomers(Customers customers)
+        public void Insert(Customers customers)
         {
             try
             {
                 context.Customers.Add(customers);
                 context.SaveChanges();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw;
+                throw ex;
             }
         }
 
-        public void UpdateCustomers(Customers customers)
+        public void Modify(Customers customers)
         {
             try
             {
@@ -62,8 +61,26 @@ namespace PracticeEF.Logic.Implementations
             }
             catch (Exception ex)
             {
-                throw;
+                throw ex;
             }
         }
+        public void Delete(Customers entity)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Delete(string id)
+        {
+            try
+            {
+                context.Customers.Remove(this.GetOne(id));
+                context.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        
     }
 }

@@ -1,0 +1,30 @@
+﻿@model PracticeEF.ResourceAccess.Entities.Categories
+@{
+    ViewBag.Title = "Create Category";
+}
+
+@using (Html.BeginForm("InsertAction", "Categories"))
+{
+    @Html.HiddenFor(m => m.Picture)
+    <fieldset>
+        <legend>Crear Categoria</legend>
+
+        <p><strong>Category Name</strong></p>
+        <div class="editor-field">
+            @Html.TextBoxFor(t => Model.CategoryName)
+        </div>
+
+        <p><strong>Description</strong></p>
+        <div class="editor-field">
+            @Html.TextBoxFor(t => Model.Description)
+        </div>
+
+        <p><strong>Picture</strong></p>
+        <div class="editor-label">
+            @Html.DisplayFor(t => Model.Picture)
+        </div>
+
+        <input type="submit" value="Create" />
+    </fieldset>
+}
+

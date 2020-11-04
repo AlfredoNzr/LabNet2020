@@ -34,10 +34,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -58,6 +58,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\PracticeEF.Logic.Abstractions\PracticeEF.Logic.Abstractions.csproj">
+      <Project>{97af5a48-37be-450c-ab81-54304b63eac3}</Project>
+      <Name>PracticeEF.Logic.Abstractions</Name>
+    </ProjectReference>
     <ProjectReference Include="..\PracticeEF.Logic.Implementations\PracticeEF.Logic.Implementations.csproj">
       <Project>{0843381F-8495-4A71-A4EC-9293F921AD5C}</Project>
       <Name>PracticeEF.Logic.Implementations</Name>

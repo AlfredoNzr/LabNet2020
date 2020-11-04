@@ -23,7 +23,7 @@ namespace PracticeEF.Interfaces.ConsoleUI
                             Console.WriteLine("------ EMPLEADOS -------");
                             EmployeesLogic employeesLogic = new EmployeesLogic();
 
-                            List<Employees> employees = employeesLogic.GetEmployees();
+                            List<Employees> employees = employeesLogic.GetAll();
 
                             foreach (Employees e in employees)
                             {
@@ -47,7 +47,7 @@ namespace PracticeEF.Interfaces.ConsoleUI
                                                 Employees employeesInsert = new Employees();
                                                 employeesInsert.FirstName = nameEmployee;
                                                 employeesInsert.LastName = lastnameEmployee;
-                                                employeesLogic.AddEmployees(employeesInsert);
+                                                employeesLogic.Insert(employeesInsert);
                                             }
                                             catch (Exception ex)
                                             {
@@ -61,8 +61,8 @@ namespace PracticeEF.Interfaces.ConsoleUI
                                             try
                                             {
                                                 Console.WriteLine("Ingrese el ID  de Empleado a eliminar");
-                                                Employees employeesDel = employeesLogic.GetEmployees(Convert.ToInt32(Console.ReadLine()));
-                                                employeesLogic.DeleteEmployees(employeesDel);
+                                                Employees employeesDel = employeesLogic.GetOne(Convert.ToInt32(Console.ReadLine()));
+                                                employeesLogic.Delete(employeesDel);
                                             }
                                             catch (Exception ex)
                                             {
@@ -83,7 +83,7 @@ namespace PracticeEF.Interfaces.ConsoleUI
 
                             CategoriesLogic categoriesLogic = new CategoriesLogic();
 
-                            List<Categories> categories = categoriesLogic.GetCategories();
+                            List<Categories> categories = categoriesLogic.GetAll();
 
                             foreach (Categories c in categories)
                             {
@@ -108,7 +108,7 @@ namespace PracticeEF.Interfaces.ConsoleUI
                                                 Categories categoriesInsert = new Categories();
                                                 categoriesInsert.CategoryName = nameCategory;
                                                 categoriesInsert.Description = descriptionCategory;
-                                                categoriesLogic.AddCategories(categoriesInsert);
+                                                categoriesLogic.Insert(categoriesInsert);
                                             }
                                             catch (Exception ex)
                                             {
@@ -122,8 +122,8 @@ namespace PracticeEF.Interfaces.ConsoleUI
                                             try
                                             {
                                                 Console.WriteLine("Ingrese el ID de la Categoria a eliminar");
-                                                Categories categoriesDel = categoriesLogic.GetCategories(Convert.ToInt32(Console.ReadLine()));
-                                                categoriesLogic.DeleteCategories(categoriesDel);
+                                                Categories categoriesDel = categoriesLogic.GetOne(Convert.ToInt32(Console.ReadLine()));
+                                                categoriesLogic.Delete(categoriesDel);
                                             }
                                             catch (Exception ex)
                                             {

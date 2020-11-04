@@ -1,4 +1,5 @@
-﻿using PracticeEF.ResourceAccess.DataBase;
+﻿using PracticeEF.Logic.Abstractions;
+using PracticeEF.ResourceAccess.DataBase;
 using PracticeEF.ResourceAccess.Entities;
 using System;
 using System.Collections.Generic;
@@ -8,53 +9,47 @@ using System.Threading.Tasks;
 
 namespace PracticeEF.Logic.Implementations
 {
-    public class TerritoriesLogic
+    public class TerritoriesLogic: BaseLogic, ILogic<Territories>
     {
-        private readonly NorthwindContext context;
 
-        public TerritoriesLogic()
-        {
-            this.context = new NorthwindContext();
-        }
-
-        public List<Territories> GetTerritories()
+        public List<Territories> GetAll()
         {
             try
             {
                 return context.Territories.ToList();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw;
+                throw ex;
             }
         }
 
-        public Territories GetTerritories(int id)
+        public Territories GetOne(int id)
         {
             try
             {
                 return context.Territories.FirstOrDefault(r => r.TerritoryID.Equals(id));
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw;
+                throw ex;
             }
         }
 
-        public void AddTerritories(Territories territories)
+        public void Insert(Territories territories)
         {
             try
             {
                 context.Territories.Add(territories);
                 context.SaveChanges();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw;
+                throw ex;
             }
         }
 
-        public void UpdateTerritories(Territories territories)
+        public void Modify(Territories territories)
         {
             try
             {
@@ -63,8 +58,13 @@ namespace PracticeEF.Logic.Implementations
             }
             catch (Exception ex)
             {
-                throw;
+                throw ex;
             }
+        }
+
+        public void Delete(Territories entity)
+        {
+            throw new NotImplementedException();
         }
     }
 }

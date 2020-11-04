@@ -8,75 +8,69 @@ using System.Linq;
 
 namespace PracticeEF.Logic.Implementations
 {
-    public class RegionLogic : IRegionLogic
+    public class RegionLogic : BaseLogic, ILogic<Region>
     {
-        private readonly NorthwindContext context;
 
-        public RegionLogic()
-        {
-            this.context = new NorthwindContext();
-        }
-
-        public List<Region> GetRegions()
+        public List<Region> GetAll()
         {
             try
             {
                 return context.Region.ToList();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw;
+                throw ex;
             }
         }
 
-        public Region GetRegion(int id)
+        public Region GetOne(int id)
         {
             try
             {
                 return context.Region.FirstOrDefault(r => r.RegionID.Equals(id));
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw;
+                throw ex;
             }
         }
         
-        public void AddRegion(Region region)
+        public void Insert(Region region)
         {
             try
             {
                 context.Region.Add(region);
                 context.SaveChanges();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw;
+                throw ex;
             }
         }
 
-        public void UpdateRegion(Region region)
+        public void Modify(Region region)
         {
             try
             {
                 context.Entry(region).State = System.Data.Entity.EntityState.Modified;
                 context.SaveChanges();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw;
+                throw ex;
             }
         }
 
-        public void DeleteRegion(Region region)
+        public void Delete(Region region)
         {
             try
             {
                 context.Region.Remove(region);
                 context.SaveChanges();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw;
+                throw ex;
             }
         }
     }

@@ -7,75 +7,69 @@ using System.Linq;
 
 namespace PracticeEF.Logic.Implementations
 {
-    public class SuppliersLogic : ISuppliersLogic
+    public class SuppliersLogic : BaseLogic, ILogic<Suppliers>
     {
-        private readonly NorthwindContext context;
 
-        public SuppliersLogic()
-        {
-            this.context = new NorthwindContext();
-        }
-
-        public List<Suppliers> GetSuppliers()
+        public List<Suppliers> GetAll()
         {
             try
             {
                 return context.Suppliers.ToList();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw;
+                throw ex;
             }
         }
 
-        public Suppliers GetSuppliers(int id)
+        public Suppliers GetOne(int id)
         {
             try
             {
                 return context.Suppliers.FirstOrDefault(r => r.SupplierID.Equals(id));
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw;
+                throw ex;
             }
         }
 
-        public void AddSuppliers(Suppliers suppliers)
+        public void Insert(Suppliers suppliers)
         {
             try
             {
                 context.Suppliers.Add(suppliers);
                 context.SaveChanges();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw;
+                throw ex;
             }
         }
 
-        public void UpdateSuppliers(Suppliers suppliers)
+        public void Modify(Suppliers suppliers)
         {
             try
             {
                 context.Entry(suppliers).State = System.Data.Entity.EntityState.Modified;
                 context.SaveChanges();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw;
+                throw ex;
             }
         }
 
-        public void DeleteSuppliers(Suppliers suppliers)
+        public void Delete(Suppliers suppliers)
         {
             try
             {
                 context.Suppliers.Remove(suppliers);
                 context.SaveChanges();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw;
+                throw ex;
             }
         }
     }

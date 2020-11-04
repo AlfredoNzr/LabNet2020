@@ -9,75 +9,69 @@ using System.Threading.Tasks;
 
 namespace PracticeEF.Logic.Implementations
 {
-    public class ProductsLogic : IProductsLogic
+    public class ProductsLogic : BaseLogic, ILogic<Products>
     {
-        private readonly NorthwindContext context;
 
-        public ProductsLogic()
-        {
-            this.context = new NorthwindContext();
-        }
-
-        public List<Products> GetProducts()
+        public List<Products> GetAll()
         {
             try
             {
                 return context.Products.ToList();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw;
+                throw ex;
             }
         }
 
-        public Products GetProduct(int id)
+        public Products GetOne(int id)
         {
             try
             {
                 return context.Products.FirstOrDefault(r => r.ProductID.Equals(id));
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw;
+                throw ex;
             }
         }
 
-        public void AddProducts(Products products)
+        public void Insert(Products products)
         {
             try
             {
                 context.Products.Add(products);
                 context.SaveChanges();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw;
+                throw ex;
             }
         }
 
-        public void UpdateProducts(Products products)
+        public void Modify(Products products)
         {
             try
             {
                 context.Entry(products).State = System.Data.Entity.EntityState.Modified;
                 context.SaveChanges();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw;
+                throw ex;
             }
         }
 
-        public void DeleteProducts(Products products)
+        public void Delete(Products products)
         {
             try
             {
                 context.Products.Remove(products);
                 context.SaveChanges();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw;
+                throw ex;
             }
         }
     }

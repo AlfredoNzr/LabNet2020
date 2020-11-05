@@ -8,7 +8,3 @@ C:\Users\Molheh\source\repos\LabNet2020\ejercicio3\PracticeEF\PracticeEF.Resourc
 C:\Users\Molheh\source\repos\LabNet2020\ejercicio3\PracticeEF\PracticeEF.ResourceAccess.Entities\obj\Debug\PracticeEF.ResourceAccess.Entities.pdb
 C:\Users\Molheh\source\repos\LabNet2020\ejercicio3\PracticeEF\PracticeEF.ResourceAccess.Entities\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\Molheh\source\repos\LabNet2020\ejercicio3\PracticeEF\PracticeEF.ResourceAccess.Entities\bin\Debug\EntityFramework.SqlServer.xml
-<<<<<<< HEAD
-=======
-C:\Users\Molheh\source\repos\LabNet2020\ejercicio3\PracticeEF\PracticeEF.ResourceAccess.Entities\obj\Debug\PracticeEF.ResourceAccess.Entities.csprojAssemblyReference.cache
->>>>>>> 0648de9a2e6129d2c3cb99b1f1c25f8d7688b8b0

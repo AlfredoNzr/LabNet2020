@@ -41,7 +41,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <Compile Include="ICategoriesLogic.cs" />
     <Compile Include="ICustomersLogic.cs" />
     <Compile Include="IEmployeesLogic.cs" />
@@ -54,17 +53,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-=======
-    <Compile Include="BaseLogic.cs" />
-    <Compile Include="ILogic.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\PracticeEF.ResourceAccess.DataBase\PracticeEF.ResourceAccess.DataBase.csproj">
-      <Project>{df2766f8-d0d6-4e96-b133-c3aebd7c47c7}</Project>
-      <Name>PracticeEF.ResourceAccess.DataBase</Name>
-    </ProjectReference>
->>>>>>> 0648de9a2e6129d2c3cb99b1f1c25f8d7688b8b0
     <ProjectReference Include="..\PracticeEF.ResourceAccess.Entities\PracticeEF.ResourceAccess.Entities.csproj">
       <Project>{a2a7b8d7-3cda-4cfa-a429-da3d08e4c164}</Project>
       <Name>PracticeEF.ResourceAccess.Entities</Name>

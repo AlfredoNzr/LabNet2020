@@ -1,0 +1,40 @@
+﻿@model List<PracticeEF.ResourceAccess.Entities.Categories>
+@{
+    ViewBag.Title = "Categories";
+}
+<h2>@ViewBag.Title.</h2>
+
+<button type="button" class="btn btn-success">
+    <a href="/Categories/Insert/">Create</a>
+</button>
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">CategoryID</th>
+            <th scope="col">CategoryName</th>
+            <th scope="col">Description</th>
+            <th scope="col">Picture</th>
+            <th scope="col">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{foreach (var m in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayName(Convert.ToString(m.CategoryID)) </td>
+                    <td>@Html.DisplayName(Convert.ToString(m.CategoryName)) </td>
+                    <td>@Html.DisplayName(Convert.ToString(m.Description == null ? "nulo" : m.Description)) </td>
+                    <td>@Html.DisplayName(Convert.ToString(m.Picture)) </td>
+                    <td>
+                        <button type="button" class="btn btn-warning">
+                            <a href="/Categories/Modify/@Convert.ToString(m.CategoryID)">Modify</a>
+                        </button>
+                        <button type="button" class="btn btn-danger">
+                            <a href="/Categories/Delete/@Convert.ToString(m.CategoryID)">Delete</a>
+                        </button>
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>

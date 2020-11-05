@@ -7,3 +7,11 @@ C:\Users\Molheh\source\repos\LabNet2020\ejercicio3\PracticeEF\PracticeEF.Logic.A
 C:\Users\Molheh\source\repos\LabNet2020\ejercicio3\PracticeEF\PracticeEF.Logic.Abstractions\obj\Debug\PracticeEF.Logic.Abstractions.csproj.CopyComplete
 C:\Users\Molheh\source\repos\LabNet2020\ejercicio3\PracticeEF\PracticeEF.Logic.Abstractions\obj\Debug\PracticeEF.Logic.Abstractions.dll
 C:\Users\Molheh\source\repos\LabNet2020\ejercicio3\PracticeEF\PracticeEF.Logic.Abstractions\obj\Debug\PracticeEF.Logic.Abstractions.pdb
+<<<<<<< HEAD
+=======
+C:\Users\Molheh\source\repos\LabNet2020\ejercicio3\PracticeEF\PracticeEF.Logic.Abstractions\bin\Debug\PracticeEF.ResourceAccess.DataBase.dll
+C:\Users\Molheh\source\repos\LabNet2020\ejercicio3\PracticeEF\PracticeEF.Logic.Abstractions\bin\Debug\EntityFramework.dll
+C:\Users\Molheh\source\repos\LabNet2020\ejercicio3\PracticeEF\PracticeEF.Logic.Abstractions\bin\Debug\PracticeEF.ResourceAccess.DataBase.pdb
+C:\Users\Molheh\source\repos\LabNet2020\ejercicio3\PracticeEF\PracticeEF.Logic.Abstractions\bin\Debug\PracticeEF.ResourceAccess.DataBase.dll.config
+C:\Users\Molheh\source\repos\LabNet2020\ejercicio3\PracticeEF\PracticeEF.Logic.Abstractions\bin\Debug\EntityFramework.xml
+>>>>>>> 0648de9a2e6129d2c3cb99b1f1c25f8d7688b8b0

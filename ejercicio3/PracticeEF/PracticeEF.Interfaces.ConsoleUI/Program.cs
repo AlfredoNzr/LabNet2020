@@ -23,7 +23,11 @@ namespace PracticeEF.Interfaces.ConsoleUI
                             Console.WriteLine("------ EMPLEADOS -------");
                             EmployeesLogic employeesLogic = new EmployeesLogic();
 
+<<<<<<< HEAD
                             List<Employees> employees = employeesLogic.GetEmployees();
+=======
+                            List<Employees> employees = employeesLogic.GetAll();
+>>>>>>> 0648de9a2e6129d2c3cb99b1f1c25f8d7688b8b0
 
                             foreach (Employees e in employees)
                             {
@@ -47,7 +51,11 @@ namespace PracticeEF.Interfaces.ConsoleUI
                                                 Employees employeesInsert = new Employees();
                                                 employeesInsert.FirstName = nameEmployee;
                                                 employeesInsert.LastName = lastnameEmployee;
+<<<<<<< HEAD
                                                 employeesLogic.AddEmployees(employeesInsert);
+=======
+                                                employeesLogic.Insert(employeesInsert);
+>>>>>>> 0648de9a2e6129d2c3cb99b1f1c25f8d7688b8b0
                                             }
                                             catch (Exception ex)
                                             {
@@ -61,8 +69,13 @@ namespace PracticeEF.Interfaces.ConsoleUI
                                             try
                                             {
                                                 Console.WriteLine("Ingrese el ID  de Empleado a eliminar");
+<<<<<<< HEAD
                                                 Employees employeesDel = employeesLogic.GetEmployees(Convert.ToInt32(Console.ReadLine()));
                                                 employeesLogic.DeleteEmployees(employeesDel);
+=======
+                                                Employees employeesDel = employeesLogic.GetOne(Convert.ToInt32(Console.ReadLine()));
+                                                employeesLogic.Delete(employeesDel);
+>>>>>>> 0648de9a2e6129d2c3cb99b1f1c25f8d7688b8b0
                                             }
                                             catch (Exception ex)
                                             {
@@ -83,7 +96,11 @@ namespace PracticeEF.Interfaces.ConsoleUI
 
                             CategoriesLogic categoriesLogic = new CategoriesLogic();
 
+<<<<<<< HEAD
                             List<Categories> categories = categoriesLogic.GetCategories();
+=======
+                            List<Categories> categories = categoriesLogic.GetAll();
+>>>>>>> 0648de9a2e6129d2c3cb99b1f1c25f8d7688b8b0
 
                             foreach (Categories c in categories)
                             {
@@ -108,7 +125,11 @@ namespace PracticeEF.Interfaces.ConsoleUI
                                                 Categories categoriesInsert = new Categories();
                                                 categoriesInsert.CategoryName = nameCategory;
                                                 categoriesInsert.Description = descriptionCategory;
+<<<<<<< HEAD
                                                 categoriesLogic.AddCategories(categoriesInsert);
+=======
+                                                categoriesLogic.Insert(categoriesInsert);
+>>>>>>> 0648de9a2e6129d2c3cb99b1f1c25f8d7688b8b0
                                             }
                                             catch (Exception ex)
                                             {
@@ -122,8 +143,13 @@ namespace PracticeEF.Interfaces.ConsoleUI
                                             try
                                             {
                                                 Console.WriteLine("Ingrese el ID de la Categoria a eliminar");
+<<<<<<< HEAD
                                                 Categories categoriesDel = categoriesLogic.GetCategories(Convert.ToInt32(Console.ReadLine()));
                                                 categoriesLogic.DeleteCategories(categoriesDel);
+=======
+                                                Categories categoriesDel = categoriesLogic.GetOne(Convert.ToInt32(Console.ReadLine()));
+                                                categoriesLogic.Delete(categoriesDel);
+>>>>>>> 0648de9a2e6129d2c3cb99b1f1c25f8d7688b8b0
                                             }
                                             catch (Exception ex)
                                             {
@@ -147,6 +173,7 @@ namespace PracticeEF.Interfaces.ConsoleUI
                 menu = Menu();
             }
 
+<<<<<<< HEAD
             //try
             //{
             //    RegionLogic regionLogic = new RegionLogic();
@@ -202,6 +229,8 @@ namespace PracticeEF.Interfaces.ConsoleUI
             //    Console.WriteLine($"{c.CustomerID} -- {c.ContactName} -- {c.Address}");
             //}
 
+=======
+>>>>>>> 0648de9a2e6129d2c3cb99b1f1c25f8d7688b8b0
         }
 
         static int Menu()

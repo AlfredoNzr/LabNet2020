@@ -1,0 +1,52 @@
+﻿@model List<PracticeEF.ResourceAccess.Entities.Customers>
+@{
+    ViewBag.Title = "Customers";
+}
+<h2>@ViewBag.Title.</h2>
+
+<button type="button" class="btn btn-success">
+    <a href="/Customers/Insert/">Create</a>
+</button>
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">CustomerID</th>
+            <th scope="col">Company Name</th>
+            <th scope="col">Contact Name</th>
+            <th scope="col">Address</th>
+            <th scope="col">City</th>
+            <th scope="col">Region</th>
+            <th scope="col">Postal Code</th>
+            <th scope="col">Country</th>
+            <th scope="col">Phone</th>
+            <th scope="col">Fax</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{foreach (var m in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayName(Convert.ToString(m.CustomerID)) </td>
+                    <td>@Html.DisplayName(Convert.ToString(m.CompanyName == null ? "" : m.CompanyName)) </td>
+                    <td>@Html.DisplayName(Convert.ToString(m.ContactName == null ? "" : m.ContactName)) </td>
+                    <td>@Html.DisplayName(Convert.ToString(m.Address == null ? "" : m.Address)) </td>
+                    <td>@Html.DisplayName(Convert.ToString(m.City == null ? "" : m.City)) </td>
+                    <td>@Html.DisplayName(Convert.ToString(m.Region == null ? "" : m.Region)) </td>
+                    <td>@Html.DisplayName(Convert.ToString(m.PostalCode == null ? "" : m.PostalCode)) </td>
+                    <td>@Html.DisplayName(Convert.ToString(m.Country == null ? "" : m.Country)) </td>
+                    <td>@Html.DisplayName(Convert.ToString(m.Phone == null ? "" : m.Phone)) </td>
+                    <td>@Html.DisplayName(Convert.ToString(m.Fax == null ? "" : m.Fax)) </td>
+                    <td>
+                        <button type="button" class="btn btn-warning">
+                            <a href="/Customers/Modify/@Convert.ToString(m.CustomerID)">Modify</a>
+                        </button>
+                        <button type="button" class="btn btn-danger">
+                            <a href="/Customers/Delete/@Convert.ToString(m.CustomerID)">Delete</a>
+                        </button>
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+

@@ -1,12 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-<<<<<<< HEAD
-# Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
-=======
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30611.23
->>>>>>> 0648de9a2e6129d2c3cb99b1f1c25f8d7688b8b0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticeEF.Interfaces.ConsoleUI", "PracticeEF.Interfaces.ConsoleUI\PracticeEF.Interfaces.ConsoleUI.csproj", "{21CB21DA-D181-44CB-A664-0429BFB6466A}"
 EndProject
@@ -24,13 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticeEF.Logic.Implementa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticeEF.Logic.Abstractions", "PracticeEF.Logic.Abstractions\PracticeEF.Logic.Abstractions.csproj", "{97AF5A48-37BE-450C-AB81-54304B63EAC3}"
 EndProject
-<<<<<<< HEAD
-=======
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticeEF.Interfaces.WebUI", "PracticeEF.Interfaces.WebUI\PracticeEF.Interfaces.WebUI.csproj", "{F040FAE7-CA6C-4726-A511-2E74913D61C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticeEF.Logic.UnitTest", "PracticeEF.Logic.UnitTest\PracticeEF.Logic.UnitTest.csproj", "{CD07462B-DB99-4946-9877-832D5A62482D}"
-EndProject
->>>>>>> 0648de9a2e6129d2c3cb99b1f1c25f8d7688b8b0
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,36 +47,21 @@ Global
 		{97AF5A48-37BE-450C-AB81-54304B63EAC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{97AF5A48-37BE-450C-AB81-54304B63EAC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{97AF5A48-37BE-450C-AB81-54304B63EAC3}.Release|Any CPU.Build.0 = Release|Any CPU
-<<<<<<< HEAD
-=======
 		{F040FAE7-CA6C-4726-A511-2E74913D61C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F040FAE7-CA6C-4726-A511-2E74913D61C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F040FAE7-CA6C-4726-A511-2E74913D61C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F040FAE7-CA6C-4726-A511-2E74913D61C2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CD07462B-DB99-4946-9877-832D5A62482D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CD07462B-DB99-4946-9877-832D5A62482D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CD07462B-DB99-4946-9877-832D5A62482D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CD07462B-DB99-4946-9877-832D5A62482D}.Release|Any CPU.Build.0 = Release|Any CPU
->>>>>>> 0648de9a2e6129d2c3cb99b1f1c25f8d7688b8b0
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{21CB21DA-D181-44CB-A664-0429BFB6466A} = {EEADA935-D53E-4DB0-B0B3-0676375ACCEC}
-<<<<<<< HEAD
-		{0843381F-8495-4A71-A4EC-9293F921AD5C} = {63D32F09-D27E-4092-899A-A964178F3F53}
-		{97AF5A48-37BE-450C-AB81-54304B63EAC3} = {63D32F09-D27E-4092-899A-A964178F3F53}
-		{DF2766F8-D0D6-4E96-B133-C3AEBD7C47C7} = {2E5FBD48-C1D3-4860-89E7-6ACD71DF450E}
-		{A2A7B8D7-3CDA-4CFA-A429-DA3D08E4C164} = {2E5FBD48-C1D3-4860-89E7-6ACD71DF450E}
-=======
 		{DF2766F8-D0D6-4E96-B133-C3AEBD7C47C7} = {2E5FBD48-C1D3-4860-89E7-6ACD71DF450E}
 		{A2A7B8D7-3CDA-4CFA-A429-DA3D08E4C164} = {2E5FBD48-C1D3-4860-89E7-6ACD71DF450E}
 		{0843381F-8495-4A71-A4EC-9293F921AD5C} = {63D32F09-D27E-4092-899A-A964178F3F53}
 		{97AF5A48-37BE-450C-AB81-54304B63EAC3} = {63D32F09-D27E-4092-899A-A964178F3F53}
 		{F040FAE7-CA6C-4726-A511-2E74913D61C2} = {EEADA935-D53E-4DB0-B0B3-0676375ACCEC}
-		{CD07462B-DB99-4946-9877-832D5A62482D} = {63D32F09-D27E-4092-899A-A964178F3F53}
->>>>>>> 0648de9a2e6129d2c3cb99b1f1c25f8d7688b8b0
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {818F8E0E-9910-4076-B695-45468D38FE75}

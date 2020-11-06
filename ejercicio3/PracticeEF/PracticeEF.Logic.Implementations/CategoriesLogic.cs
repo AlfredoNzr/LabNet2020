@@ -11,8 +11,19 @@ namespace PracticeEF.Logic.Implementations
 {
     public class CategoriesLogic : BaseLogic, ILogic<Categories>
     {
+        private NorthwindContext @object;
 
-        public List<Categories> GetAll()
+
+        public CategoriesLogic()
+        {
+            
+        }
+        public CategoriesLogic(NorthwindContext @object)
+        {
+            this.@object = @object;
+        }
+
+        public virtual List<Categories> GetAll()
         {
             try
             {
@@ -24,7 +35,7 @@ namespace PracticeEF.Logic.Implementations
             }
         }
 
-        public Categories GetOne(int id)
+        public virtual Categories GetOne(int id)
         {
             try
             {

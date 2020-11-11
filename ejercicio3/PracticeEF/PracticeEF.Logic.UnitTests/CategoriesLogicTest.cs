@@ -55,14 +55,13 @@ namespace PracticeEF.Logic.UnitTests
             LstCategories.Add(new Categories() { CategoryID = 2, CategoryName = "CategoriaDOS" });
             LstCategories.Add(new Categories() { CategoryID = 4, CategoryName = "CategoriaCUATRO" });
 
-            var mockSet = new Mock<DbSet<Categories>>(); // Lista Categoria falsa
-            var lstMockSet = mockSet.Object;
+            var mockSet = new Mock<DbSet<Categories>>(); 
 
             var mockContext = new Mock<NorthwindContext>();
-            mockContext.Setup(c => c.Categories).Returns(lstMockSet); // me retorna una categoria falsa
+            mockContext.Setup(c => c.Categories).Returns(mockSet.Object); // me retorna una categoria falsa
 
             var mockLogic = new Mock<CategoriesLogic>(mockContext.Object); //CategoriesLogic Falso con NorthwindContext falso
-            mockLogic.Setup(c => c.GetAll()).Returns(LstCategories); //modificacion del comportamiento de GetOne
+            mockLogic.Setup(c => c.GetAll()).Returns(LstCategories); //modificacion del comportamiento de GetAll
 
             var catLogic = mockLogic.Object; //instancia de un MockLogic
             var cat = catLogic.GetAll();
@@ -76,6 +75,33 @@ namespace PracticeEF.Logic.UnitTests
 
             Assert.AreEqual(4, cat[2].CategoryID);
             Assert.AreEqual("CategoriaCUATRO", cat[2].CategoryName);
+
+        }
+
+        [TestMethod]
+
+        public void Delete_Test()
+        {
+            Categories categories = new Categories();
+            categories.CategoryID = 1;
+            categories.CategoryName = "TEST";
+
+            var mockSet = new Mock<DbSet<Categories>>();
+
+            var mockContext = new Mock<NorthwindContext>();
+
+            mockContext.Setup(c => c.Categories).Returns(mockSet.Object);
+
+            var mockLogic = new Mock<CategoriesLogic>(mockContext.Object);
+
+
+            //mockLogic.Verify(c => c.Delete(categories), Times.Once());
+            mockLogic.Verify(c => c.Delete(categories));
+            mockSet.Verify(c => c.Remove(It.IsAny<Categories>()), Times.Once());
+            mockContext.Verify(c => c.SaveChanges(), Times.Once());
+
+
+
 
         }
     }

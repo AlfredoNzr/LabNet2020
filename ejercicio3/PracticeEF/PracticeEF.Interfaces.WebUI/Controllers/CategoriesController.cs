@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using PracticeEF.ResourceAccess.Entities;
 using PracticeEF.Logic.Implementations;
+using System.Web.UI.WebControls;
 
 namespace PracticeEF.Interfaces.WebUI.Controllers
 {
@@ -24,21 +25,23 @@ namespace PracticeEF.Interfaces.WebUI.Controllers
 
             return RedirectToAction("Index", this.categoriesLogic.GetAll());
         }
-
-        public ActionResult Modify(int id)
-        {
-            return View(categoriesLogic.GetOne(id));
-        }
-
+       
         public ActionResult ModifyAction(Categories category)
         {
             this.categoriesLogic.Modify(category);
             return RedirectToAction("Index", this.categoriesLogic.GetAll());
         }
 
-        public ActionResult Insert()
+        public ActionResult InsertUpdate(int? id)
         {
-            return View();
+            if (!id.HasValue)
+            {
+                return View();
+            }
+            else {
+                return View(categoriesLogic.GetOne(Convert.ToInt32(id)));
+            }
+
         }
 
         public ActionResult InsertAction(Categories category)

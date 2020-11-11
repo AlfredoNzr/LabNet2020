@@ -77,7 +77,7 @@ namespace PracticeEF.Logic.Implementations
             }
         }
 
-        public void Delete(Categories categories)
+        public virtual void Delete(Categories categories)
         {
             try
             {

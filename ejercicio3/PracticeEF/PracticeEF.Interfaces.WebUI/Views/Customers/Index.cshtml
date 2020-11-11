@@ -5,7 +5,7 @@
 <h2>@ViewBag.Title.</h2>
 
 <button type="button" class="btn btn-success">
-    <a href="/Customers/Insert/">Create</a>
+    <a href="/Customers/InsertUpdate/">Create</a>
 </button>
 <table class="table">
     <thead class="thead-dark">
@@ -38,7 +38,7 @@
                     <td>@Html.DisplayName(Convert.ToString(m.Fax == null ? "" : m.Fax)) </td>
                     <td>
                         <button type="button" class="btn btn-warning">
-                            <a href="/Customers/Modify/@Convert.ToString(m.CustomerID)">Modify</a>
+                            <a href="/Customers/InsertUpdate/@Convert.ToString(m.CustomerID)">Modify</a>
                         </button>
                         <button type="button" class="btn btn-danger">
                             <a href="/Customers/Delete/@Convert.ToString(m.CustomerID)">Delete</a>

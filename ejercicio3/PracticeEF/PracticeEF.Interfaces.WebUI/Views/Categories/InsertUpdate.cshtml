@@ -1,0 +1,70 @@
+﻿@model PracticeEF.ResourceAccess.Entities.Categories
+@{
+    ViewBag.Title = "Category";
+}
+@{
+    if (Model != null)
+    {
+        Html.BeginForm("ModifyAction", "Categories", FormMethod.Post);
+
+        @Html.HiddenFor(m => m.CategoryID)
+        @Html.HiddenFor(m => m.Picture)
+        <fieldset>
+            <legend>Modificar Categoria</legend>
+
+            <p><strong>Category ID</strong></p>
+            <div class="editor-label">
+                @Html.DisplayFor(t => Model.CategoryID)
+            </div>
+
+            <p><strong>Category Name</strong></p>
+            <div class="editor-field">
+                @Html.TextBoxFor(t => Model.CategoryName)
+            </div>
+
+            <p><strong>Description</strong></p>
+            <div class="editor-field">
+                @Html.TextBoxFor(t => Model.Description)
+            </div>
+
+            <p><strong>Picture</strong></p>
+            <div class="editor-label">
+                @Html.DisplayFor(t => Model.Picture)
+            </div>
+
+            <input type="submit" value="Save" />
+        </fieldset>
+
+    }
+    else
+    {
+        Html.BeginForm("InsertAction", "Categories", FormMethod.Post);
+
+        @Html.HiddenFor(m => m.Picture)
+        <fieldset>
+            <legend>Crear Categoria</legend>
+
+            <p><strong>Category Name</strong></p>
+            <div class="editor-field">
+                @Html.TextBoxFor(t => Model.CategoryName)
+            </div>
+
+            <p><strong>Description</strong></p>
+            <div class="editor-field">
+                @Html.TextBoxFor(t => Model.Description)
+            </div>
+
+            <p><strong>Picture</strong></p>
+            <div class="editor-label">
+                @Html.DisplayFor(t => Model.Picture)
+            </div>
+
+            <input type="submit" value="Create" />
+        </fieldset>
+
+    }
+}
+
+
+
+

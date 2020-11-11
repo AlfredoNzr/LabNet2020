@@ -14,6 +14,18 @@ namespace PracticeEF.Interfaces.WebUI
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
+                name: "InsertUpdateCategories",
+                url: "{controller}/InsertUpdate/{id}",
+                defaults: new { controller = "Categories", action = "InsertUpdate", id = UrlParameter.Optional }
+            );
+
+            routes.MapRoute(
+                name: "InsertUpdateCustomers",
+                url: "{controller}/InsertUpdate/{id}",
+                defaults: new { controller = "Customers", action = "InsertUpdate", id = UrlParameter.Optional }
+            );
+
+            routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }

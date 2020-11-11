@@ -25,20 +25,23 @@ namespace PracticeEF.Interfaces.WebUI.Controllers
             return RedirectToAction("Index", this.customersLogic.GetAll());
         }
 
-        public ActionResult Modify(string id)
-        {
-            return View(customersLogic.GetOne(id));
-        }
-
         public ActionResult ModifyAction(Customers customer)
         {
             this.customersLogic.Modify(customer);
             return RedirectToAction("Index", this.customersLogic.GetAll());
         }
 
-        public ActionResult Insert()
+        public ActionResult InsertUpdate(string id)
         {
-            return View();
+            if (id != "")
+            {
+                return View(customersLogic.GetOne(id));
+            }
+            else
+            {
+                return View();
+            }
+
         }
 
         public ActionResult InsertAction(Customers customer)

@@ -1,11 +1,11 @@
-﻿@model PracticeEF.ResourceAccess.Entities.Categories
+﻿@model PracticeEF.ResourceAccess.ViewModels.CategoriesView
 @{
     ViewBag.Title = "Category";
 }
 @{
     if (Model != null)
     {
-        Html.BeginForm("ModifyAction", "Categories", FormMethod.Post);
+        Html.BeginForm("ModifyAction", "Categories", FormMethod.Post, new { id = "frmInsertUpdate" });
 
         @Html.HiddenFor(m => m.CategoryID)
         @Html.HiddenFor(m => m.Picture)
@@ -14,22 +14,22 @@
 
             <p><strong>Category ID</strong></p>
             <div class="editor-label">
-                @Html.DisplayFor(t => Model.CategoryID)
+                @Html.DisplayFor(m => m.CategoryID)
             </div>
 
             <p><strong>Category Name</strong></p>
             <div class="editor-field">
-                @Html.TextBoxFor(t => Model.CategoryName)
+                @Html.TextBoxFor(m => m.CategoryName)
             </div>
 
             <p><strong>Description</strong></p>
             <div class="editor-field">
-                @Html.TextBoxFor(t => Model.Description)
+                @Html.TextBoxFor(m => m.Description)
             </div>
 
             <p><strong>Picture</strong></p>
             <div class="editor-label">
-                @Html.DisplayFor(t => Model.Picture)
+                @Html.DisplayFor(m => m.Picture)
             </div>
 
             <input type="submit" value="Save" />
@@ -38,7 +38,7 @@
     }
     else
     {
-        Html.BeginForm("InsertAction", "Categories", FormMethod.Post);
+        Html.BeginForm("InsertAction", "Categories", FormMethod.Post, new { id = "frmInsertUpdate" });
 
         @Html.HiddenFor(m => m.Picture)
         <fieldset>
@@ -46,25 +46,40 @@
 
             <p><strong>Category Name</strong></p>
             <div class="editor-field">
-                @Html.TextBoxFor(t => Model.CategoryName)
+                @Html.TextBoxFor(m => m.CategoryName)
             </div>
 
             <p><strong>Description</strong></p>
             <div class="editor-field">
-                @Html.TextBoxFor(t => Model.Description)
+                @Html.TextBoxFor(m => m.Description)
             </div>
 
             <p><strong>Picture</strong></p>
             <div class="editor-label">
-                @Html.DisplayFor(t => Model.Picture)
+                @Html.DisplayFor(m => m.Picture)
             </div>
 
             <input type="submit" value="Create" />
         </fieldset>
 
     }
+
+
 }
 
-
-
+<div id="modal" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Modal title</h5>
+            </div>
+            <div class="modal-body">
+                <p>Modal body text goes here.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="btnClose" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
 

@@ -91,3 +91,7 @@ C:\Users\Molheh\source\repos\LabNet2020\ejercicio3\PracticeEF\PracticeEF.Interfa
 C:\Users\Molheh\source\repos\LabNet2020\ejercicio3\PracticeEF\PracticeEF.Interfaces.WebUI\obj\Debug\PracticeEF.Interfaces.WebUI.pdb
 C:\Users\Molheh\source\repos\LabNet2020\ejercicio3\PracticeEF\PracticeEF.Interfaces.WebUI\bin\EntityFramework.SqlServer.dll
 C:\Users\Molheh\source\repos\LabNet2020\ejercicio3\PracticeEF\PracticeEF.Interfaces.WebUI\bin\EntityFramework.SqlServer.xml
+C:\Users\Molheh\source\repos\LabNet2020\ejercicio3\PracticeEF\PracticeEF.Interfaces.WebUI\bin\PracticeEF.CrossCutting.Utils.dll
+C:\Users\Molheh\source\repos\LabNet2020\ejercicio3\PracticeEF\PracticeEF.Interfaces.WebUI\bin\PracticeEF.ResourceAccess.ViewModels.dll
+C:\Users\Molheh\source\repos\LabNet2020\ejercicio3\PracticeEF\PracticeEF.Interfaces.WebUI\bin\PracticeEF.CrossCutting.Utils.pdb
+C:\Users\Molheh\source\repos\LabNet2020\ejercicio3\PracticeEF\PracticeEF.Interfaces.WebUI\bin\PracticeEF.ResourceAccess.ViewModels.pdb

@@ -156,6 +156,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\myfunctions.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -177,7 +178,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
     <Folder Include="Views\InsertUpdate\" />
   </ItemGroup>
   <ItemGroup>
@@ -194,6 +194,10 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\PracticeEF.CrossCutting.Utils\PracticeEF.CrossCutting.Utils.csproj">
+      <Project>{5e9d9f70-ad2b-443c-8698-eb48fcaba027}</Project>
+      <Name>PracticeEF.CrossCutting.Utils</Name>
+    </ProjectReference>
     <ProjectReference Include="..\PracticeEF.Logic.Abstractions\PracticeEF.Logic.Abstractions.csproj">
       <Project>{97af5a48-37be-450c-ab81-54304b63eac3}</Project>
       <Name>PracticeEF.Logic.Abstractions</Name>
@@ -209,6 +213,10 @@
     <ProjectReference Include="..\PracticeEF.ResourceAccess.Entities\PracticeEF.ResourceAccess.Entities.csproj">
       <Project>{a2a7b8d7-3cda-4cfa-a429-da3d08e4c164}</Project>
       <Name>PracticeEF.ResourceAccess.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PracticeEF.ResourceAccess.ViewModels\PracticeEF.ResourceAccess.ViewModels.csproj">
+      <Project>{eab375f3-5ab1-4a53-ae3e-1d512c85b2ef}</Project>
+      <Name>PracticeEF.ResourceAccess.ViewModels</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

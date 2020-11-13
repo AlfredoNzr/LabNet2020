@@ -1,12 +1,12 @@
-﻿@model List<PracticeEF.ResourceAccess.Entities.Categories>
+﻿@model List<PracticeEF.ResourceAccess.ViewModels.CategoriesView>
 @{
     ViewBag.Title = "Categories";
 }
-<h2>@ViewBag.Title.</h2>
-
+<h2>@ViewBag.Title</h2>
+<p>@ViewBag.MsgResult</p>
 <button type="button" class="btn btn-success">
     <a href="/Categories/InsertUpdate/create">Create</a>
-</button>
+</button> 
 <table class="table">
     <thead class="thead-dark">
         <tr>

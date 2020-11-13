@@ -46,9 +46,8 @@ namespace PracticeEF.Interfaces.WebUI.Controllers
             }
             else {
                 Categories categories = categoriesLogic.GetOne(Convert.ToInt32(id));
-                CategoriesView categoriesView = CategoriesMapper.ToViewModel(categories);
 
-                return View(categoriesView);
+                return View(categories.ToViewModel());
             }
 
         }
@@ -59,7 +58,7 @@ namespace PracticeEF.Interfaces.WebUI.Controllers
             {
                 try
                 {
-                    this.categoriesLogic.Modify(CategoriesMapper.ToEntity(categoryView));
+                    this.categoriesLogic.Modify(categoryView.ToEntity());
                     return Json(new
                     {
                         success = true,
@@ -93,7 +92,7 @@ namespace PracticeEF.Interfaces.WebUI.Controllers
             {
                 try
                 {
-                    this.categoriesLogic.Insert(CategoriesMapper.ToEntity(categoryView));
+                    this.categoriesLogic.Insert(categoryView.ToEntity());
                     return Json(new
                     {
                         success = true,

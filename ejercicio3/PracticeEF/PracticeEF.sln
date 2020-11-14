@@ -29,6 +29,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CrossCutting", "CrossCuttin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticeEF.CrossCutting.Utils", "PracticeEF.CrossCutting.Utils\PracticeEF.CrossCutting.Utils.csproj", "{5E9D9F70-AD2B-443C-8698-EB48FCABA027}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticaEF.Interfaces.WebAPI", "PracticaEF.Interfaces.WebAPI\PracticaEF.Interfaces.WebAPI.csproj", "{A4BF4D27-1EDD-495C-ABAF-4C77DFA73DC9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -71,6 +73,10 @@ Global
 		{5E9D9F70-AD2B-443C-8698-EB48FCABA027}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E9D9F70-AD2B-443C-8698-EB48FCABA027}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E9D9F70-AD2B-443C-8698-EB48FCABA027}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4BF4D27-1EDD-495C-ABAF-4C77DFA73DC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4BF4D27-1EDD-495C-ABAF-4C77DFA73DC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4BF4D27-1EDD-495C-ABAF-4C77DFA73DC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4BF4D27-1EDD-495C-ABAF-4C77DFA73DC9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -85,6 +91,7 @@ Global
 		{61AC37F4-9968-4372-8626-DAE71DEDB944} = {63D32F09-D27E-4092-899A-A964178F3F53}
 		{EAB375F3-5AB1-4A53-AE3E-1D512C85B2EF} = {2E5FBD48-C1D3-4860-89E7-6ACD71DF450E}
 		{5E9D9F70-AD2B-443C-8698-EB48FCABA027} = {912824E7-F790-4B7F-AF91-930F69EC062F}
+		{A4BF4D27-1EDD-495C-ABAF-4C77DFA73DC9} = {EEADA935-D53E-4DB0-B0B3-0676375ACCEC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {818F8E0E-9910-4076-B695-45468D38FE75}

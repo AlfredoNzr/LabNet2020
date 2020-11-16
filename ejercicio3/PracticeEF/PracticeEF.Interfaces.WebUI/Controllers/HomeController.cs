@@ -11,8 +11,17 @@ namespace PracticeEF.Interfaces.WebUI.Controllers
     {
         public ActionResult Index()
         {
-            RequestApiWeatherGeo requestApiWeatherGeo = new RequestApiWeatherGeo();
-            ViewBag.Weather = requestApiWeatherGeo.GetInfoWeather();
+            try
+            {
+                RequestApiWeatherGeo requestApiWeatherGeo = new RequestApiWeatherGeo();
+                ViewBag.Weather = requestApiWeatherGeo.GetInfoWeather();
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
             return View();
         }
 

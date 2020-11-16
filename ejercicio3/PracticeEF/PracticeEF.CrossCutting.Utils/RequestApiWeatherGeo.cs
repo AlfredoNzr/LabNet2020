@@ -19,19 +19,25 @@ namespace PracticeEF.CrossCutting.Utils
             InfoGeo ApiLocationResult = new InfoGeo();
 
             City cityWeather = new City();
-
-            string Ip = GetIp(); //retorna IP
-            ApiLocationResult = GetLocation(Ip); //retorna la ubicacion segun la IP
-
-            cityWeather = GetWeather(ApiLocationResult.Location.City, ApiLocationResult.Location.Region.Name); //Retorna el tiempo en esa ciudad o region
-
-            if (cityWeather._id != null)
+            try
             {
-                return ($"Ciudad: {cityWeather.name}, Por la mañana: {cityWeather.weather.morning_desc} Min:{cityWeather.weather.morning_temp}°|Max:{cityWeather.weather.afternoon_temp}°");
+                ApiLocationResult = GetLocation(GetIp()); //retorna la ubicacion segun la IP
+
+                cityWeather = GetWeather(ApiLocationResult.Location.City, ApiLocationResult.Location.Region.Name); //Retorna el tiempo en esa ciudad o region
+
+                if (cityWeather._id != null)
+                {
+                    return ($"Ciudad: {cityWeather.name}, Por la mañana: {cityWeather.weather.morning_desc} Min:{cityWeather.weather.morning_temp}°|Max:{cityWeather.weather.afternoon_temp}°");
+                }
+                else
+                {
+                    return "error loading forecast";
+                }
+
             }
-            else
+            catch (Exception)
             {
-                return "ocurrio un error";
+                return "error loading forecast";
             }
             
         }

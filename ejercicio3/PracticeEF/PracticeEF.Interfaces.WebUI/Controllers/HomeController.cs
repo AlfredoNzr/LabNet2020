@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PracticeEF.CrossCutting.Utils;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -10,6 +11,8 @@ namespace PracticeEF.Interfaces.WebUI.Controllers
     {
         public ActionResult Index()
         {
+            RequestApiWeatherGeo requestApiWeatherGeo = new RequestApiWeatherGeo();
+            ViewBag.Weather = requestApiWeatherGeo.GetInfoWeather();
             return View();
         }
 

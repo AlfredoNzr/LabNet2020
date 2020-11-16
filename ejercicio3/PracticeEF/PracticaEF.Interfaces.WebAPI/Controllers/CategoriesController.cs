@@ -15,6 +15,8 @@ namespace PracticaEF.Interfaces.WebAPI.Controllers
     public class CategoriesController : ApiController
     {
         CategoriesLogic categoriesLogic = new CategoriesLogic();
+
+        [HttpGet]
         // GET api/values
         public IEnumerable<string> Get()
         {
